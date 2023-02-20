@@ -16,11 +16,19 @@
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL.Design" />
+    <None Remove="Pages\Admin\" />
+    <None Remove="Pages\Admin\Blogs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Data\Models\" />
     <Folder Include="Data\Models\Domain\" />
+    <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\Admin\Blogs\" />
+    <Folder Include="Pages\Admin\Blogs\Blog.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Folder>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -34,5 +42,8 @@
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\Admin\Blogs\Index.cshtml" />
   </ItemGroup>
 </Project>

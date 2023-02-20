@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/jpmac/Projects/BlogPost/BlogPost
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/jpmac/Projects/BlogPost/BlogPost/Pages/Admin/Blogs/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vQmxvZ3MvQmxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/jpmac/Projects/BlogPost/BlogPost/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

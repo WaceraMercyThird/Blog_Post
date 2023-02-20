@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{A500353A-F5BA-477A-A1A6-8B69EFF3A723}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlogPost/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlogPost/Pages/Admin/Blogs/Blog.cshtml.cs">
     <Files>
-      <File FileName="BlogPost/Data/Models/Domain/BlogPostModel.cs" Line="1" Column="1" />
-      <File FileName="BlogPost/Data/Models/Domain/Tag.cs" Line="1" Column="1" />
-      <File FileName="BlogPost/Data/Models/Domain/BlogPostDbContext.cs" Line="6" Column="15" />
-      <File FileName="BlogPost/appsettings.json" Line="10" Column="23" />
-      <File FileName="BlogPost/Program.cs" Line="3" Column="35" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml.cs" Line="21" Column="33" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml" Line="23" Column="1" />
+      <File FileName="BlogPost/Data/Models/Domain/BlogPostModel.cs" Line="21" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,20 +12,32 @@
             <Node name="BlogPost" expanded="True">
               <Node name="Data" expanded="True">
                 <Node name="Models" expanded="True">
-                  <Node name="Domain" expanded="True" />
+                  <Node name="Domain" expanded="True">
+                    <Node name="BlogPostModel.cs" selected="True" />
+                  </Node>
                 </Node>
               </Node>
-              <Node name="Pages" expanded="True" />
-              <Node name="Program.cs" selected="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Blogs" expanded="True">
+                    <Node name="Blog.cshtml" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Shared" expanded="True" />
+                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Privacy.cshtml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BlogPost PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
