@@ -1,0 +1,39 @@
+﻿@page
+@model BlogPost.Pages.Admin.Blogs.ListModel
+@{
+    ViewData["Title"] = "BlogPostList page";
+}
+
+
+<div class="bg-secondary bg-opacity-10 py-2 mb-5">
+    <div class="container">
+        <h1>Blog Post List</h1>
+    </div>
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Heading</td>
+                <td>PageTitle</td>
+                <td>Context</td>
+                <td>ShortDescription</td>
+                <td>Author</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var blogPost in Model.BlogPostLists)
+            {
+                <tr>
+                    <td>@blogPost.Heading</td>
+                    <td>@blogPost.PageTitle</td>
+                    <td>@blogPost.Context</td>
+                    <td>@blogPost.ShortDescription</td>
+                    <td>@blogPost.Author</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

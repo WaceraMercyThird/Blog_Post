@@ -1,14 +1,29 @@
 ﻿using BlogPost.Data.Models.Domain;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using Serilog.Events;
+
 
 
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+Log.Logger = new LoggerConfiguration()
+               .WriteTo.File(
+               path: "/Users/jpmac/Desktop/Logs/BLOGPOSTLAPILOGS-.txt",
+               outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm,ss.fff zzz}[{Level:u3}] {Message:lj}{NewLine}{Exception}",
+               rollingInterval: RollingInterval.Day,
+               restrictedToMinimumLevel: LogEventLevel.Information
+               ).CreateLogger();
+
+builder.Host.UseSerilog();
+
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<BlogPostDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("BlogPostDBContext")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("BlogPostDbContext")));
 
 var app = builder.Build();
 

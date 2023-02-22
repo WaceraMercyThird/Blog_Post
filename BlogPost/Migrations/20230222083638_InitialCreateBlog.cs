@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BlogPost.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialCreateBlog : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,12 +19,12 @@ namespace BlogPost.Migrations
                     Heading = table.Column<string>(type: "text", nullable: false),
                     PageTitle = table.Column<string>(type: "text", nullable: false),
                     Context = table.Column<string>(type: "text", nullable: false),
-                    ShortDescripttion = table.Column<string>(type: "text", nullable: false),
+                    ShortDescription = table.Column<string>(type: "text", nullable: false),
                     FeaturedImageUrl = table.Column<string>(type: "text", nullable: false),
                     UrlHandle = table.Column<string>(type: "text", nullable: false),
-                    Published = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    PublishedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     Author = table.Column<string>(type: "text", nullable: false),
-                    Visible = table.Column<bool>(type: "boolean", nullable: false)
+                    IsVisible = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
                 {

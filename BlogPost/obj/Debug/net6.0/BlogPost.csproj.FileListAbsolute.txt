@@ -54,3 +54,13 @@
 /Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Npgsql.dll
 /Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.AspNetCore.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Extensions.Hosting.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Extensions.Logging.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Formatting.Compact.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Settings.Configuration.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Sinks.Console.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Sinks.Debug.dll
+/Users/jpmac/Projects/BlogPost/BlogPost/bin/Debug/net6.0/Serilog.Sinks.File.dll

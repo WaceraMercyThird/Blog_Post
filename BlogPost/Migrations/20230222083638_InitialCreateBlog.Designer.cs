@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace BlogPost.Migrations
 {
     [DbContext(typeof(BlogPostDbContext))]
-    [Migration("20230217101152_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230222083638_InitialCreateBlog")]
+    partial class InitialCreateBlog
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace BlogPost.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BlogPost.Data.Models.Domain.BlogPost", b =>
+            modelBuilder.Entity("BlogPost.Data.Models.Domain.BlogPostEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -47,23 +47,23 @@ namespace BlogPost.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("PageTitle")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Published")
+                    b.Property<DateTime>("PublishedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("ShortDescripttion")
+                    b.Property<string>("ShortDescription")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("UrlHandle")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<bool>("Visible")
-                        .HasColumnType("boolean");
 
                     b.HasKey("Id");
 

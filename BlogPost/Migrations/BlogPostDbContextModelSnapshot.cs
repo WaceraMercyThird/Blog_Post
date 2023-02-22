@@ -22,7 +22,7 @@ namespace BlogPost.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("BlogPost.Data.Models.Domain.BlogPost", b =>
+            modelBuilder.Entity("BlogPost.Data.Models.Domain.BlogPostEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -44,23 +44,23 @@ namespace BlogPost.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("PageTitle")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("Published")
+                    b.Property<DateTime>("PublishedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("ShortDescripttion")
+                    b.Property<string>("ShortDescription")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("UrlHandle")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<bool>("Visible")
-                        .HasColumnType("boolean");
 
                     b.HasKey("Id");
 
