@@ -15,6 +15,8 @@ namespace BlogPost.Data.Models.Domain
 		public DateTime PublishedDate { get; set; } = DateTime.Now;
 		public string Author { get; set; }
         public bool IsVisible { get; set; }
+		
+		
 
     }
 }

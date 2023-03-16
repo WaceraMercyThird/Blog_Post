@@ -11,7 +11,7 @@
     "BlogPost": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:56502",
+      "applicationUrl": "http://localhost:59430",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

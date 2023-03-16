@@ -8,7 +8,7 @@ using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+// Serilog
 Log.Logger = new LoggerConfiguration()
                .WriteTo.File(
                path: "/Users/jpmac/Desktop/Logs/BLOGPOSTLAPILOGS-.txt",
@@ -22,6 +22,7 @@ builder.Host.UseSerilog();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+// Connection String
 builder.Services.AddDbContext<BlogPostDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("BlogPostDbContext")));
 
