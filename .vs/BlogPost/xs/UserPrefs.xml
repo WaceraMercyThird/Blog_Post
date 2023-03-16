@@ -1,12 +1,15 @@
 ﻿<Properties StartupConfiguration="{A500353A-F5BA-477A-A1A6-8B69EFF3A723}|BlogPost">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlogPost/Pages/Admin/Blogs/Blog.cshtml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BlogPost/Program.cs">
     <Files>
-      <File FileName="BlogPost/Pages/Admin/Blogs/List.cshtml.cs" Line="28" Column="1" />
-      <File FileName="BlogPost/Data/Models/Domain/BlogPostModel.cs" />
-      <File FileName="BlogPost/Pages/Admin/Blogs/List.cshtml" />
-      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml" />
-      <File FileName="BlogPost/Pages/Shared/_Layout.cshtml" Line="37" Column="38" />
-      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml.cs" Line="1" Column="1" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/List.cshtml.cs" Line="42" Column="1" />
+      <File FileName="BlogPost/Data/Models/Domain/BlogPostModel.cs" Line="1" Column="1" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/List.cshtml" Line="42" Column="17" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml" Line="1" Column="1" />
+      <File FileName="BlogPost/Pages/Shared/_Layout.cshtml" />
+      <File FileName="BlogPost/Pages/Admin/Blogs/Blog.cshtml.cs" />
+      <File FileName="BlogPost/Data/Models/ViewModels/AddBlogPost.cs" Line="1" Column="1" />
+      <File FileName="BlogPost/Data/Models/Domain/BlogPostDbContext.cs" Line="7" Column="23" />
+      <File FileName="BlogPost/Program.cs" Line="26" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -30,6 +33,7 @@
                 <Node name="Index.cshtml" expanded="True" />
                 <Node name="Privacy.cshtml" expanded="True" />
               </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -37,10 +41,10 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.BlogPost PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
